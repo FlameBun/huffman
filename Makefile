@@ -1,4 +1,4 @@
-FILES = src/main.c src/compression.c src/decompression.c
+FILES = main.c compression.c decompression.c
 CFLAGS = -Wall -Wextra -Werror -fcommon
 
 huff: $(FILES)
