@@ -2,7 +2,7 @@
 My program features a command line interface (CLI) that allows a user to perform data compression and decompression. These operations are accomplished through Huffman coding. Assigning shorter bit sequences to input bytes that appear frequently and longer bit sequences to input bytes that appear rarely effectively compresses the input data.
 
 ## How to Get Started
-Inside the `huffman` directory, run `make` to compile and link the .c files. This will create the executable `./huff` in the `huffman` directory. Afterwards, run `./huff -h`. The following instructions will appear on the terminal:
+In the `huffman` directory, run `make` to compile and link the .c files. This will create the executable `./huff` in the `huffman` directory. Afterwards, run `./huff -h`. The following instructions will appear on the terminal:
 <pre>
 Menu:
 ./huff [-h] [-c|-d] [-b BLOCKSIZE]
@@ -17,8 +17,8 @@ It is necessary to perform input `<` and output `>` redirection in order to comp
 <pre>
 ./huff -c < InputFile.txt > OutputFile
 </pre>
-In the command shown above, `InputFile.txt` is the file to be compressed and `OutputFile` is the name of the compressed file. `OutputFile` will be created if it does not exist or truncated if it does exist.
+In the command shown above, `InputFile.txt` is the file to be compressed and `OutputFile` is the name of the compressed file. `OutputFile` will be created if it does not exist or truncated if it does exist. I/O redirection is useful because the program does not see any of the redirection commands; redirection is handled solely by the shell.
 
 ## Notes
-* `-b` is meant to be paired with `-c`. Without specifying a block size via `-b`, the default block size is 65536.
-* The smaller the block size, the weaker the compression. On the other hand, the higher the block size, the stronger the compression.
+* `-b` is meant to be optionally paired with `-c`. Without specifying a block size via `-b`, the default block size is 65536.
+* The smaller the block size, the weaker the compression. On the other hand, the larger the block size, the stronger the compression.
