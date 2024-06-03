@@ -94,7 +94,7 @@ int valid_options(int argc, char **argv) {
 void print_menu(void) {
     fprintf(stderr,
         "Menu:\n"
-        "[-h] [-c|-d] [-b BLOCKSIZE]\n"
+        "./huff [-h] [-c|-d] [-b BLOCKSIZE]\n"
         "-h   Help: Display this help menu.\n"
         "-c   Compress: Read the original data and output compressed data.\n"
         "-b   Block Size: (Use only if -c is specified). Specify the block size in bytes ([1024, 65536]).\n"
