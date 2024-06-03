@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <limits.h>
-#include "../include/huff.h"
+#include "huff.h"
 
 void output_description(void);
 void postorder_seq(NODE* root, char* buffer, int* bit_num);

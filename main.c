@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "../include/huff.h"
+#include "huff.h"
 
 int valid_options(int argc, char **argv);
 void print_menu(void);

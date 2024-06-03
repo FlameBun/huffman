@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include "../include/huff.h"
+#include "huff.h"
 
 void label_leaves(NODE* root);
 
